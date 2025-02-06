@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduFlex - Interactive Learning Platform</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFlex - Interactive Learning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Logout</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Main Content Area -->
-  <main>
-    <div class="dashboard">
-      <h2>Your Personalized Dashboard</h2>
-      <div class="learning-goals">
-        <h3>Learning Goals</h3>
-        <ul id="goal-list">
-          <li>Complete JavaScript Basics</li>
-          <li>Finish Math Assignment</li>
-        </ul>
-      </div>
-      <div class="progress">
-        <h3>Progress Tracker</h3>
-        <div id="progress-bar">
-          <div id="progress"></div>
+    <div class="container">
+        <header>
+            <h1>Welcome to EduFlex 📚</h1>
+        </header>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="#" id="coursesBtn">Courses</a></li>
+                <li><a href="#" id="dashboardBtn">Dashboard</a></li>
+                <li><a href="#" id="profileBtn">Profile</a></li>
+                <li><a href="#" id="logoutBtn">Logout</a></li>
+            </ul>
         </div>
-      </div>
-    </div>
-  </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 EduFlex. All rights reserved.</p>
-  </footer>
+        <div class="content">
+            <div id="courses" class="section-content">
+                <h2>Courses 🎓</h2>
+                <p>Explore a variety of courses designed to enhance your skills and knowledge. Start your learning journey today!</p>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Machine Learning</li>
+                    <li>Data Science</li>
+                    <li>AI & Robotics</li>
+                </ul>
+            </div>
+
+            <div id="dashboard" class="section-content">
+                <h2>Dashboard 📊</h2>
+                <p>Your personalized learning dashboard. Track your progress, set goals, and stay motivated!</p>
+                <ul>
+                    <li>Completed Goals: 4</li>
+                    <li>Goals in Progress: 2</li>
+                    <li>Upcoming Goals: 3</li>
+                </ul>
+            </div>
+
+            <div id="profile" class="section-content">
+                <h2>Profile 🧑‍💻</h2>
+                <p>Manage your personal information, update preferences, and monitor your progress.</p>
+                <ul>
+                    <li>Name: John Doe</li>
+                    <li>Email: john.doe@example.com</li>
+                    <li>Age: 25</li>
+                    <li>Location: San Francisco, CA</li>
+                </ul>
+            </div>
+
+            <div id="logout" class="section-content">
+                <h2>Logout 🛑</h2>
+                <p>Are you sure you want to log out? We hope to see you back soon!</p>
+                <button onclick="logout()">Log Out</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

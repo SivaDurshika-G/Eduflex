@@ -7,57 +7,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
+    <div class="app-container">
         <header>
             <h1>Welcome to EduFlex 📚</h1>
         </header>
 
-        <div class="navbar">
+        <!-- Navbar -->
+        <nav class="navbar">
             <ul>
                 <li><a href="#" id="coursesBtn">Courses</a></li>
                 <li><a href="#" id="dashboardBtn">Dashboard</a></li>
                 <li><a href="#" id="profileBtn">Profile</a></li>
                 <li><a href="#" id="logoutBtn">Logout</a></li>
             </ul>
-        </div>
+        </nav>
 
+        <!-- Content Area -->
         <div class="content">
-            <div id="courses" class="section-content">
+            <div id="courses" class="content-section">
                 <h2>Courses 🎓</h2>
-                <p>Explore a variety of courses designed to enhance your skills and knowledge. Start your learning journey today!</p>
+                <p>Explore the courses we offer and start learning today!</p>
                 <ul>
                     <li>Web Development</li>
-                    <li>Machine Learning</li>
                     <li>Data Science</li>
-                    <li>AI & Robotics</li>
+                    <li>AI & Machine Learning</li>
+                    <li>Cybersecurity</li>
                 </ul>
             </div>
 
-            <div id="dashboard" class="section-content">
+            <div id="dashboard" class="content-section">
                 <h2>Dashboard 📊</h2>
-                <p>Your personalized learning dashboard. Track your progress, set goals, and stay motivated!</p>
+                <p>Your personalized learning dashboard.</p>
+                <p>Track your progress and goals.</p>
                 <ul>
-                    <li>Completed Goals: 4</li>
-                    <li>Goals in Progress: 2</li>
+                    <li>Courses Completed: 4</li>
                     <li>Upcoming Goals: 3</li>
+                    <li>Learning Hours: 120+</li>
                 </ul>
             </div>
 
-            <div id="profile" class="section-content">
+            <div id="profile" class="content-section">
                 <h2>Profile 🧑‍💻</h2>
-                <p>Manage your personal information, update preferences, and monitor your progress.</p>
+                <p>Manage your account details and preferences.</p>
                 <ul>
                     <li>Name: John Doe</li>
-                    <li>Email: john.doe@example.com</li>
-                    <li>Age: 25</li>
-                    <li>Location: San Francisco, CA</li>
+                    <li>Email: johndoe@example.com</li>
+                    <li>Country: USA</li>
                 </ul>
             </div>
 
-            <div id="logout" class="section-content">
+            <div id="logout" class="content-section">
                 <h2>Logout 🛑</h2>
-                <p>Are you sure you want to log out? We hope to see you back soon!</p>
+                <p>Are you sure you want to log out? Your progress will be saved!</p>
                 <button onclick="logout()">Log Out</button>
             </div>
         </div>

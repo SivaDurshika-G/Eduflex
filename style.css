@@ -1,80 +1,93 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f9f4;
-  margin: 0;
-  padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-  width: 90%;
-  margin: auto;
-  padding-top: 20px;
+.app-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
 header h1 {
-  text-align: center;
-  font-size: 2.5em;
-  color: #2d6a4f;
-  margin-bottom: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    color: #2d6a4f;
+    margin-bottom: 30px;
 }
 
-/* Navigation Bar */
+/* Navbar Styling */
 .navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
 }
 
 .navbar li {
-  margin: 0 15px;
+    margin: 0 15px;
 }
 
 .navbar a {
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #2d6a4f;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s, transform 0.3s ease;
+    text-decoration: none;
+    color: #2d6a4f;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar a:hover {
-  background-color: #d9f7d9;
-  transform: scale(1.1);
+    background-color: #d9f7d9;
+    transform: scale(1.1);
 }
 
 /* Content Sections */
-.section-content {
-  display: none;
-  margin-top: 20px;
+.content {
+    margin-top: 40px;
+}
+
+.content-section {
+    display: none;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 h2 {
-  color: #2d6a4f;
+    color: #2d6a4f;
+    font-size: 1.8em;
 }
 
-/* Course List */
 ul {
-  list-style: none;
+    list-style-type: none;
+    padding-left: 0;
 }
 
-li {
-  margin: 8px 0;
+ul li {
+    font-size: 1.2em;
+    color: #555555;
+    margin: 10px 0;
 }
 
 /* Logout Button */
 button {
-  padding: 10px 20px;
-  background-color: #d9534f;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    background-color: #d9534f;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #c9302c;
+    background-color: #c9302c;
 }
